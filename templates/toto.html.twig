@@ -1,0 +1,14 @@
+ {% extends "base.html.twig" %}
+{% block title %}Apagnan{% endblock %}
+ {% block body %}
+ <h1>lol</h1>
+
+
+ <ul>
+  {% set i = 1 %}
+  {% for donnee in totoTableau %}
+   <li>{{ i }} - {{donnee.nom}} qui a {{donnee.age}} ans</li>    
+{% set i = i + 1%}
+ {% endfor %}
+ </ul>
+ {% endblock %}
